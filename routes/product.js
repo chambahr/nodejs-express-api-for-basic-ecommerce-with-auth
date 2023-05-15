@@ -16,7 +16,7 @@ const router = express.Router()
 router.post("/create", createProduct)
 
 // UPDATE
-router.put("/find/:id", verifyToken,  updateProduct)
+router.put("/find/:id",  updateProduct)
 
 // DELETE
 router.delete("/find/:id",verifyToken,  deleteProduct)

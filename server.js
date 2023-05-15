@@ -43,6 +43,7 @@ dotenv.config();
   app.use('/api/auth', authRoute)
   app.use('/api/products', productsRoute)
 
+  // app.use(express.static('frontend'))
   app.use(express.static('frontend'))
 
   app.use((err, req, res, next) => {
@@ -70,7 +71,7 @@ dotenv.config();
   
 
 // Start the server
-app.listen(9090, ()=> {
+app.listen(2121, ()=> {
     connect()
-    console.log('connected to backend http://localhost:9090/');
+    console.log('connected to backend http://localhost:2121/');
 })
