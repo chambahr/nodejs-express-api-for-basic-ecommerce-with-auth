@@ -71,7 +71,7 @@ dotenv.config();
   
 
 // Start the server
-app.listen(2121, ()=> {
+app.listen(9090, ()=> {
     connect()
-    console.log('connected to backend http://localhost:2121/');
+    console.log('connected to backend http://localhost:9090/');
 })
